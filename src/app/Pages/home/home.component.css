@@ -1,0 +1,124 @@
+/* Centra el carrusel y le da un ancho fijo */
+.carousel {
+    width: 80%; /* Ajusta el ancho según tu necesidad */
+    margin: 0 auto;
+    border-radius: 15px; /* Bordes redondeados */
+    overflow: hidden; /* Asegura que el contenido no se desborde */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para el carrusel */
+  }
+  .carousel-item {
+   
+    align-items: center;
+    justify-content: center;
+    height: 500px; /* Ajusta la altura según tu preferencia */
+    /* Necesario para los estilos de imagen */
+  }
+  /* Redondea las imágenes dentro del carrusel */
+  .carousel-item img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: 100%; /* Asegura que la imagen ocupe toda la altura del contenedor */
+    object-fit: cover; /* Mantiene la proporción de la imagen y cubre el contenedor */
+    border-radius: 15px; /* Bordes redondeados para las imágenes */
+  }
+  
+  /* Estilos para los indicadores del carrusel */
+  .carousel-indicators {
+    position: absolute;
+    bottom: 10px; /* Ajusta la posición según tu preferencia */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .carousel-indicators button {
+    background-color: #000; /* Color de los puntitos */
+    border: none; /* Sin borde */
+    border-radius: 50%; /* Forma circular */
+    width: 10px; /* Tamaño del puntito */
+    height: 10px; /* Tamaño del puntito */
+    opacity: 0.5; /* Opacidad para los puntitos */
+    transition: background-color 0.6s ease, opacity 0.6s ease; /* Transición suave */
+    margin: 0 4px; /* Espacio entre los puntitos */
+  }
+  
+  .carousel-indicators .active {
+    background-color: #fff; /* Color del puntito activo */
+    opacity: 1; /* Opacidad para el puntito activo */
+  }
+  
+  /* Opcional: Estilos para la sombra del carrusel */
+  .carousel-inner {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra opcional */
+  }
+  .carousel-caption {
+    position: absolute;
+    bottom: 20px; /* Ajusta la distancia desde la parte inferior del contenedor */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo negro con 80% de opacidad */
+    color: #fff; /* Color del texto blanco */
+    padding: 10px 20px; /* Espaciado interno para la caption */
+    border-radius: 10px; /* Bordes redondeados */
+    text-align: center; /* Centra el texto */
+    width: calc(100% 40px); /* Ajusta el ancho para que se adapte dentro del contenedor */
+  }
+  .carousel-caption {
+    position: absolute;
+    bottom: 20px; /* Ajusta la distancia desde la parte inferior del contenedor */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo negro con 80% de opacidad */
+    color: #fff; /* Color del texto blanco */
+    padding: 10px 20px; /* Espaciado interno para la caption */
+    border-radius: 10px; /* Bordes redondeados */
+    text-align: left; /* Alinea el texto a la izquierda */
+    width: calc(100% - 40px); /* Ajusta el ancho para que se adapte dentro del contenedor */
+}
+
+.carousel-caption h5 {
+    font-weight: bold; /* Pone el título en negrita */
+}
+
+.carousel-caption p {
+    font-size: 14px; /* Tamaño reducido del precio */
+    margin: 0; /* Elimina el margen del párrafo */
+}
+
+.caption-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea el contenido a la izquierda */
+}
+
+.caption-content button {
+    margin-top: 10px; /* Espacio entre el precio y el botón */
+}
+/* Estilo general para las tarjetas en el carrusel */
+.card {
+    height: 100%; /* Asegura que las tarjetas ocupen el espacio completo de la columna */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ajusta la imagen de la tarjeta */
+.card-img-top {
+    height: 200px; /* Ajusta la altura según tus necesidades */
+    object-fit: cover; /* Mantiene la proporción de la imagen y cubre el contenedor */
+}
+
+/* Asegura que el cuerpo de la tarjeta tenga un tamaño fijo */
+.card-body {
+    flex: 1; /* Asegura que el cuerpo de la tarjeta expanda para ocupar el espacio disponible */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Asegura que el botón de la tarjeta esté alineado al final */
+.card-body .btn {
+    align-self: center;
+}

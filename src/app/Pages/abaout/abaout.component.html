@@ -1,1 +1,65 @@
-<p>abaout works!</p>
+<!-- Sección de Visión, Misión y Nuestro Equipo -->
+<div class="container my-5">
+    <!-- Sección de Visión y Misión -->
+    <h2 class="text-center mb-4">Nuestra Visión && Misión</h2>
+    <div class="row">
+        <!-- Misión -->
+        <div class="col-md-6 mb-4">
+            <div class="vision-mission-card">
+                <div class="icon-container">
+                    <i class="bi bi-lightbulb-fill"></i>
+                </div>
+                <h3 class="text-center">Nuestra Misión</h3>
+                <p class="text-center">"Ofrecer chocolates de la más alta calidad que no solo satisfagan el paladar, sino que también inspiren a nuestros clientes a disfrutar de momentos especiales. Nos dedicamos a utilizar ingredientes éticos y sostenibles, a promover prácticas de comercio justo y a innovar continuamente en el arte de la chocolatería para brindar experiencias únicas y placenteras en cada bocado."</p>
+            </div>
+        </div>
+        <!-- Visión -->
+        <div class="col-md-6 mb-4">
+            <div class="vision-mission-card">
+                <div class="icon-container">
+                    <i class="bi bi-geo-alt-fill"></i>
+                </div>
+                <h3 class="text-center">Nuestra Visión</h3>
+                <p class="text-center">"Ser la marca de chocolates líder a nivel mundial, conocida por nuestra innovación en sabores y compromiso con la sostenibilidad. Buscamos transformar cada momento en una experiencia inolvidable mediante la creación de productos que deleiten los sentidos y enriquezcan la vida de nuestros clientes, siempre respetando el medio ambiente y las comunidades en las que operamos."</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de Nuestro Equipo -->
+    <h2 class="text-center mb-4">Nuestro Equipo</h2>
+    <div class="row team-container">
+        <!-- Miembro del equipo 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="team-member-card">
+                <img [src]="Abaout[0].image" alt="Team Member 1" class="img-fluid">
+                <div class="team-member-info">
+                    <h4 class="text-center">{{Abaout[0].nombre}}</h4>
+                    <p class="text-center">{{Abaout[0].cargo}}</p>
+                </div>
+            </div>
+        </div>
+        <!-- Miembro del equipo 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="team-member-card">
+                <img [src]="Abaout[1].image" alt="Team Member 2" class="img-fluid">
+                <div class="team-member-info">
+                    <h4 class="text-center">{{Abaout[1].nombre}}</h4>
+                    <p class="text-center">{{Abaout[1].cargo}}</p>
+                </div>
+            </div>
+        </div>
+        <!-- Miembro del equipo 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="team-member-card">
+                <img [src]="Abaout[2].image" alt="Team Member 3" class="img-fluid">
+                <div class="team-member-info">
+                    <h4 class="text-center" >{{Abaout[2].nombre}}</h4>
+                    <p class="text-center">{{Abaout[2].cargo}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="text-center py-4 bg-dark text-light">
+    <p>&copy; 2024 Chocolate Company. All rights reserved.</p>
+  </footer>

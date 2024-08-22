@@ -1,0 +1,44 @@
+/* Contenedor de productos con diseño de cuadrícula */
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* 3 columnas con un tamaño mínimo de 250px cada una */
+    gap: 20px; /* Espacio entre las tarjetas */
+}
+
+/* Estilo para cada tarjeta */
+.card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar un efecto de elevación */
+    border-radius: 8px; /* Bordes redondeados */
+    overflow: hidden; /* Asegura que las imágenes y otros contenidos no se desborden */
+    background-color: #fff; /* Fondo blanco para las tarjetas */
+    transition: transform 0.3s ease; /* Transición para efectos de hover */
+}
+
+/* Estilo para la imagen de la tarjeta */
+.card-img-top {
+    height: 200px; /* Ajusta la altura según tus necesidades */
+    object-fit: cover; /* Mantiene la proporción de la imagen y cubre el contenedor */
+}
+
+/* Estilo para el cuerpo de la tarjeta */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px; /* Espaciado interno */
+}
+
+/* Estilo para el precio de la tarjeta */
+.card-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333; /* Color del texto del precio */
+    margin: 10px 0; /* Espacio alrededor del precio */
+}
+
+/* Efecto de hover para las tarjetas */
+.card:hover {
+    transform: scale(1.02); /* Aumenta el tamaño de la tarjeta ligeramente al pasar el mouse */
+}

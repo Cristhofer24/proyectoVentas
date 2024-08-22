@@ -1,0 +1,22 @@
+[{
+    "id": 1,
+    "nombre": "Willy Wonka",
+    "cargo": "Gerente",
+    "image": "img/wonka-jpg.jpg"
+},
+{
+
+    "id": 2,
+    "nombre": "Bob",
+    "cargo": "Delivery",
+    "image": "img/bob.jpg"
+},
+
+{
+    "id": 3,
+    "nombre": "¡Chocolate!",
+    "cargo": "Seguridad",
+    "image": "img/chocola.jpg"
+}
+
+]

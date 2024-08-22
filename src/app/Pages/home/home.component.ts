@@ -18,7 +18,7 @@ function randomInt(max: number) {
 })
 export class HomeComponent {
 Product:Product[]=(producData as any).default;
-indicePokemonSemana: number = randomInt(3);
+indiceProducto: number = randomInt(3);
 
 constructor() {}
 ngOnInit(): void {
