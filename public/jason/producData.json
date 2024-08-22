@@ -1,0 +1,26 @@
+[
+  {
+
+  "id":1,
+  "name": "Chocolate 1",
+  "price": "$6.0",
+  "image": "img/images.jpeg",
+  "tipo": 1
+},
+{
+
+  "id":2,
+  "name": "Chocolate 2",
+  "price": "$6.0",
+  "image": "img/images2.jpeg",
+  "tipo": 1
+},
+{
+
+  "id":3,
+  "name": "Chocolate 3",
+  "price": "$6.0",
+  "image": "img/imgen3.jpg",
+  "tipo": 1
+}
+]
